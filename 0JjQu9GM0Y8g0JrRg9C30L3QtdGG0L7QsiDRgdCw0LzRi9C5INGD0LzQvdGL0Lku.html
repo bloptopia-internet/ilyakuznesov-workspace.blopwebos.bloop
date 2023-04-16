@@ -3,6 +3,29 @@
     <meta charset="utf-8">
     <title>BlopWebOS Workspace - Connected</title>
     <style>
+    .desktop-taskbar-tray-lang {
+    width: 34px; height: 40px;
+    position: fixed;
+    bottom: 0; right: 84px;
+    z-index: 5001;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+
+.desktop-taskbar-tray-lang > div {
+    padding-top: 11px
+}
+
+.desktop-taskbar-tray-lang:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.desktop-taskbar-tray-lang:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    }
+
     .desktop-taskbar {
     width: 100vw; height: 39px;
     border-top: 1px solid rgba(69, 3, 250, 0.541);
@@ -32,6 +55,9 @@
   <body>
     <div class="desktop-taskbar"></div>
     <div id="DESKTOP" style="background-image:url(img0.jpg)">
+    </div>
+    <div class="desktop-taskbar-tray-lang">
+      <div>РУС</div>
     </div>
     <script src="tray.js"></script>
     <div class="build">BlopWebOS<br>Beta version, only for testing purposes<br>Workspace Edition Build 14</div>
