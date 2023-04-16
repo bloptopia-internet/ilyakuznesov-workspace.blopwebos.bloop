@@ -3,6 +3,14 @@
     <meta charset="utf-8">
     <title>В разработке</title>
     <style>
+    .desktop-taskbar {
+    width: 100vw; height: 39px;
+    border-top: 1px solid rgba(69, 3, 250, 0.541);
+    background-color: rgba(96, 22, 216, 0.466);
+    position: fixed;
+    bottom: 0; left: 0;
+    z-index: 5000;
+    }
       .build {
     position: fixed;
     right: 4px; bottom: 40px;
@@ -22,8 +30,9 @@
     </style>
   </head>
   <body>
-    <div id="DESKTOP" style="background-image:url(img0.jpg)"></div>
-    <h1>На данный момент, рабочее пространство в разработке</h1>
+    <div class="desktop-taskbar"></div>
+    <div id="DESKTOP" style="background-image:url(img0.jpg)">
+    </div>
     <script src="tray.js"></script>
     <div class="build">BlopWebOS<br>Beta version, only for testing purposes<br>Workspace Edition Build 14</div>
   </body>
