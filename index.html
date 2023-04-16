@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Connecting...</title>
+        <script>
+var pass = prompt("Enter the token:", "");
+if (pass == null)
+window.location = "errorlogin.html";
+else if (pass.toLowerCase() == "password")
+window.location = "ok.html";
+else
+window.location = "errorlogin.html";
+        </script>
+    </head>
+</html>
